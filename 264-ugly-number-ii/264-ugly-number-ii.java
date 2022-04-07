@@ -11,7 +11,7 @@ class Solution {
     {
         int min=Math.min(ugly[i2]*2,Math.min(ugly[i3]*3,ugly[i5]*5));
         ugly[i++]=min;
-        System.out.println(min);
+       
         if(min==ugly[i2]*2)
             i2++;
          if(min==ugly[i3]*3)
