@@ -31,8 +31,7 @@ class Solution {
                 tail.next=temp;
                 tail=temp;    
             }
-      
-            temp=temp.next;
+      temp=temp.next;
         }
         node.next=tail1.next;
         tail.next=null;
