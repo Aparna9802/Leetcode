@@ -20,29 +20,23 @@ class Solution {
         ListNode temp=head;
         while(temp!=null)
         {
-          
             if(temp.val<x)
             {
                
                 node.next=temp;
-                node=temp;
-                
+                node=temp;   
             }
-            else
-               
+            else  
             { 
                 tail.next=temp;
-                tail=temp;
-                
-                
+                tail=temp;    
             }
-           // 
+      
             temp=temp.next;
         }
-        
         node.next=tail1.next;
         tail.next=null;
-    //    System.out.println("tail1 is :"+tail1.next.val);
+  
         return node1.next;
         
     }
