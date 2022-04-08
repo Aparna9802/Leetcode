@@ -20,20 +20,20 @@ class Solution {
         ListNode temp=head;
         while(temp!=null)
         {
-            System.out.println(temp.val);
+          
             if(temp.val<x)
             {
                
                 node.next=temp;
                 node=temp;
-                 System.out.println("node is"+node.val);
+                
             }
             else
                
             { 
                 tail.next=temp;
                 tail=temp;
-                  System.out.println("tail is"+tail.val);
+                
                 
             }
            // 
