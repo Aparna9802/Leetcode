@@ -23,6 +23,17 @@ class Solution {
         }
         return g;
         */
+        /*
+        Since another point is origin the distance formula will be sqrt(x^2+y^2)
+        in priority queue lamba expresssion to sort is second points distance - first point distance. minus here is used to find smallest of these two so first point is denoted as a and second point is denoted as b
+so first point contains 
+a[0]- x axis a[1]- y axis
+b[0]- x axis b[1]- y axis
+
+now formula for lambda will become
+distance of point b (b[0]*b[0]+b[1]*b[1]) - distance of point a (a[0]*a[0]+a[1]*a[1])
+
+        */
         PriorityQueue<int[]> q=new PriorityQueue<>((a,b) -> (b[0]*b[0] + b[1]*b[1])-(a[0]*a[0]+a[1]*a[1]));
             
            for(int[] point : points )
