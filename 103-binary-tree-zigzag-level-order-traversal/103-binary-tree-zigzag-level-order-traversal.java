@@ -32,7 +32,7 @@ class Solution {
             {
               
                      TreeNode temp=q.poll();
-                     System.out.println(temp.val);
+                     //System.out.println(temp.val);
                      l.add(temp.val);
                      if(temp.left!=null)
                         q.add(temp.left);
